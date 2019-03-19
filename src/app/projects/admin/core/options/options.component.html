@@ -1,0 +1,35 @@
+<!-- Demo Purposes Only -->
+<button mat-fab color="warn" class="mat-fab-bottom-right" (click)="showSettings = true" style="z-index: 9;">
+  <mat-icon class="mat-24">settings</mat-icon>
+</button>
+<mat-card class="settings-panel" *ngIf="showSettings">
+  <mat-toolbar color="warn">
+    <span fxFlex>Options</span>
+    <button mat-icon-button (click)="showSettings = false">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-toolbar>
+  <mat-card-content class="demo-checkbox">
+    <div class="pb-1">
+      <mat-checkbox [(ngModel)]="options.collapsed" (change)="sendOptions()" [align]="end">Collapsed Sidebar</mat-checkbox>
+    </div>
+    <div class="pb-1">
+      <mat-checkbox [(ngModel)]="options.compact" (change)="sendOptions()" [align]="end">Compact Sidebar</mat-checkbox>
+    </div>
+    <div class="pb-1">
+      <mat-checkbox [(ngModel)]="options.boxed" (change)="sendOptions()" [align]="end">Boxed Layout</mat-checkbox>
+    </div>
+    <div class="pb-1">
+      <mat-checkbox [(ngModel)]="options.dark" (change)="sendOptions()" [align]="end">Dark Mode</mat-checkbox>
+    </div>
+    <div class="pb-1">
+      <mat-checkbox (change)="options.dir = (options.dir == 'rtl' ? 'ltr' : 'rtl'); sendOptions()" [align]="end">RTL</mat-checkbox>
+    </div>
+    <div class="pb-0">
+      <mat-select placeholder="Language" class="mt-1" [(ngModel)]="currentLang" #langSelect="ngModel" (ngModelChange)="translate.use(currentLang)">
+        <mat-option *ngFor="let lang of translate.getLangs()" [value]="lang">{{ lang }}</mat-option>
+      </mat-select>
+   </div>
+  </mat-card-content>
+</mat-card>
+<!-- /Demo Purposes Only -->
