@@ -6,23 +6,31 @@ import { IndexComponent } from './pages/index/index.component';
 
 const routes: Routes = [
   {
-    'path': '',
-    'component': HomeComponent,
-    'children': [
+    path: "",
+    component: HomeComponent,
+    children: [
       {
-        'path': '',
-        'component': IndexComponent,
+        path: "",
+        component: IndexComponent,
         data: {
-          breadcrumb: ' Index ',
+          breadcrumb: " Index "
         }
       },
       {
-        path: 'about',
-        loadChildren: './pages/aboutus/aboutus.module#AboutusModule'
+        path: "about",
+        loadChildren: "./pages/aboutus/aboutus.module#AboutusModule"
+      },
+      {
+        path: "blog",
+        loadChildren: "./pages/blog/blog.module#BlogModule"
+      },
+      {
+        path: "blog-detail",
+        loadChildren: "./pages/blogdetail/blogdetail.module#BlogdetailModule"
       }
     ]
   }
-]
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

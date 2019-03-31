@@ -5,7 +5,7 @@ const routes: Routes = [
 
   { path: '', loadChildren: './projects/home/home.module#HomeModule' },
   { path: 'dashboard', loadChildren: './projects/dashboard/dashboard.module#DashboardModule' },
-  { path: 'blog', loadChildren: './projects/blog/blog.module#BlogModule' },
+
 
 ];
 
