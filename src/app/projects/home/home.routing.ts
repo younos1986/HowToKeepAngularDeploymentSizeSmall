@@ -27,6 +27,14 @@ const routes: Routes = [
       {
         path: "blog-detail",
         loadChildren: "./pages/blogdetail/blogdetail.module#BlogdetailModule"
+      },
+      {
+        path: "pricing",
+        loadChildren: "./pages/pricing/pricing.module#PricingModule"
+      },
+      {
+        path: "contact",
+        loadChildren: "./pages/contact/contact.module#ContactModule"
       }
     ]
   }
