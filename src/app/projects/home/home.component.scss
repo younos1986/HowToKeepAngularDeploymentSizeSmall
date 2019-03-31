@@ -7,10 +7,18 @@
 
 @import '../../../assets/home/css/bootstrap.min.css';
 @import '../../../assets/home/css/style.css';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
 
-
+.example-full-width {
+  width: 100%;
+}
 
 
 

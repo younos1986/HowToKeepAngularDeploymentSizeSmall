@@ -1,0 +1,71 @@
+<div class="modal-header">
+  <h5 class="modal-title"><img src="../../../assets/home/images/logo.png" alt="logo"></h5>
+  <button type="button" class="close" mat-dialog-close aria-label="Close">
+    <span class="ti-close"></span>
+  </button>
+</div>
+
+  <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Sign in">
+
+      <div class="modal-body">
+
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" matInput class="form-control add-listing_form" placeholder="Username">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type="password" matInput class="form-control add-listing_form" placeholder="Password">
+          </mat-form-field>
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button  type="button" class="btn btn-primary">LOG IN</button>
+      </div>
+
+    </mat-tab>
+
+    <mat-tab label="Sign up">
+
+      <!-- <div mat-dialog-content> -->
+
+      <div >
+
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" matInput class="form-control add-listing_form" id="name" placeholder="Your name">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <input type="text" matInput class="form-control add-listing_form" id="email" placeholder="Email">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+          <input type="text" matInput class="form-control add-listing_form" id="username" placeholder="Username">
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+          <input type="password" matInput class="form-control add-listing_form" id="password" placeholder="Password">
+          </mat-form-field>
+        </form>
+
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button  type="button" class="btn btn-primary">CREATE ACCOUNT</button>
+      </div>
+      <!-- </div> -->
+      <!-- <div mat-dialog-actions>
+        <button mat-button (click)="onNoClick()">No Thanks</button>
+        <button mat-button [mat-dialog-close]="data.animal" cdkFocusInitial>Ok</button>
+      </div> -->
+
+    </mat-tab>
+
+  </mat-tab-group>
+
+
+<!-- </div> -->
+
+

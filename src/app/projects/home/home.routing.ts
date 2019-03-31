@@ -15,6 +15,10 @@ const routes: Routes = [
         data: {
           breadcrumb: ' Index ',
         }
+      },
+      {
+        path: 'about',
+        loadChildren: './pages/aboutus/aboutus.module#AboutusModule'
       }
     ]
   }
