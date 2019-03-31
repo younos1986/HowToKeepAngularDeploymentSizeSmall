@@ -1,15 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DocsComponent } from './docs.component';
+import { Routes, RouterModule } from '@angular/router';
 
-import {DocsRoutingModule} from './docs.routing';
+import { DocsComponent } from './docs.component';
+// import {DocsRoutingModule} from './docs.routing';
 
 import { KendoFeatureModule, AngularMaterialFeatureModule } from '../../../../modules/index';
+
+
+const routes: Routes = [
+  {
+    'path': '',
+    'component': DocsComponent,
+    data: {
+      breadcrumb: ' docs ',
+    }
+  }
+]
+
 
 @NgModule({
   imports: [
     CommonModule,
-    DocsRoutingModule,
+    RouterModule.forChild(routes),
 
     KendoFeatureModule,
     AngularMaterialFeatureModule,
