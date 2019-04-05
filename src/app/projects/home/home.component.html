@@ -14,6 +14,11 @@
               <ul class="navbar-nav">
 
                 <li class="nav-item">
+                  <a class="nav-link" [routerLink]="['/dashboard']">Dashboard</a>
+                </li>
+
+
+                <li class="nav-item">
                   <a class="nav-link" [routerLink]="['/about']">About</a>
                 </li>
 
@@ -31,9 +36,8 @@
                     <span class="ti-angle-down"></span>
                   </a>
                   <div class="dropdown-menu">
-                    <a class="dropdown-item" href="blog.html">Blog Listing</a>
-                    <a class="dropdown-item" href="blog-two.html">Blog Layout Two</a>
-                    <a class="dropdown-item" href="blog-detail.html">Blog Detail</a>
+                    <a class="dropdown-item" [routerLink]="['/blog']">Blog Listing</a>
+                    <a class="dropdown-item" [routerLink]="['/blog-detail']">Blog Detail</a>
                   </div>
                 </li>
                 <li class="nav-item">
