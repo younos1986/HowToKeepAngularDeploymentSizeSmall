@@ -22,23 +22,57 @@ export interface Menu {
 
 const MENUITEMS = [
   {
-    state: '/dashboard',
+    state: 'dashboard',
     name: 'HOME',
     type: 'link',
-    icon: 'explore'
+    icon: 'explore',
+    badge: [],
+    children:[]
   },
   {
-    state: '/dashboard/docs',
-    name: 'DOCS',
+    state: "dashboard",
+    name: "menu 1",
+    type: "sub",
+    icon: "apps",
+    badge: [
+    {
+        type: "red",
+        value: "new"
+    }],
+    children: [{
+      state: 'subMenu1',
+      name: 'subMenu1',
+      type: 'link',
+      
+    },{
+      state: 'subMenu2',
+      name: 'subMenu2',
+      type: 'link',
+     
+    }]
+},
+{
+  state: "dashboard",
+  name: "menu 2",
+  type: "sub",
+  icon: "apps",
+  badge: [
+  {
+      type: "red",
+      value: "new"
+  }],
+  children: [{
+    state: 'subMenu1',
+    name: 'subMenu1',
     type: 'link',
-    icon: 'local_library'
-  },
-  {
-    state: 'extTabLink',
-    name: 'extTabLink',
-    type: 'extTabLink',
-    icon: 'local_library'
-  }
+    
+  },{
+    state: 'subMenu2',
+    name: 'subMenu2',
+    type: 'link',
+   
+  }]
+}
 ];
 
 @Injectable()
@@ -47,7 +81,7 @@ export class MenuService {
     return MENUITEMS;
   }
 
-  add(menu: Menu) {
+  add(menu: any) {
     MENUITEMS.push(menu);
   }
 }
