@@ -23,14 +23,15 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-             
+              "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": [
-             
+              "node_modules/jquery/dist/jquery.min.js"
+              
             ],
             "es5BrowserSupport": true
           },
@@ -90,7 +91,7 @@
             ],
             "scripts": [],
             "assets": [
-              
+              "src/favicon.ico",
               "src/assets"
             ]
           }

@@ -20,19 +20,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    this._script.loadScripts('body', [
-      'assets/home/js/jquery.min.js',
-    ], true).then(() => {
-
-        console.log('home page js files are loaded');
+    
         this._script.loadScripts('body', [
-          'assets/home/js/bootstrap.min.js',
-          'assets/home/js/hammer.js',
           'assets/home/js/popper.min.js',
         ], true).then(() => {
             console.log('home page js files are loaded');
           });
-      });
+     
 
   }
 
