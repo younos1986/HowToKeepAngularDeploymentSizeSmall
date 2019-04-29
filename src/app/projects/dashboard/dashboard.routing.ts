@@ -20,6 +20,11 @@ const routes: Routes = [
          path: 'docs',
          loadChildren: './pages/docs/docs.module#DocsModule'
      }
+      ,
+      {
+        path: 'users',
+        loadChildren: './pages/users/users.module#UsersModule'
+      }
     ]
   }
 ]

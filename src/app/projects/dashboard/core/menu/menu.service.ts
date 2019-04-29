@@ -31,7 +31,7 @@ const MENUITEMS = [
   },
   {
     state: "dashboard",
-    name: "menu 1",
+    name: "Manage Users",
     type: "sub",
     icon: "apps",
     badge: [
@@ -40,15 +40,15 @@ const MENUITEMS = [
         value: "new"
     }],
     children: [{
-      state: 'subMenu1',
-      name: 'subMenu1',
+      state: 'users',
+      name: 'All Users',
       type: 'link',
-      
+
     },{
       state: 'subMenu2',
       name: 'subMenu2',
       type: 'link',
-     
+
     }]
 },
 {
@@ -65,12 +65,12 @@ const MENUITEMS = [
     state: 'subMenu1',
     name: 'subMenu1',
     type: 'link',
-    
+
   },{
     state: 'subMenu2',
     name: 'subMenu2',
     type: 'link',
-   
+
   }]
 }
 ];

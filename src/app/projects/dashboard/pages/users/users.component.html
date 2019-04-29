@@ -1,0 +1,11 @@
+
+<a class='btn btn-success' [routerLink]="['/dashboard/users/add-user']"> New User </a>
+<kendo-grid
+[data]="view"
+
+  (dataStateChange)="dataStateChange($event)">
+  <kendo-grid-column field="name" width="130"></kendo-grid-column>
+  <kendo-grid-column field="kind" width="200"></kendo-grid-column>
+  <kendo-grid-column field="url">
+  </kendo-grid-column>
+</kendo-grid>
