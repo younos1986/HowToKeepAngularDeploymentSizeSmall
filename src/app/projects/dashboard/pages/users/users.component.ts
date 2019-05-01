@@ -34,7 +34,7 @@ export class UsersComponent implements OnInit {
 
   getUsers()
   {
-    this._userService.getUsers().subscribe(
+    this._userService.getUsers('').subscribe(
       res=>
       {
         console.log(res);
