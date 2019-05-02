@@ -4,14 +4,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Live <a target='_blank' href='https://younos1986.github.io/'> demo </a> 
 
-# Admin Panel
+# Admin Panel  (page Size ~= 950KB )
 
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/dashboard.png' />
 
 
 
 
-# Home Page
+# Home Page (page Size ~= 850KB )
 
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/homepage.png' />
 
