@@ -3,7 +3,14 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 
+# Admin Panel
+
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/dashboard.png' />
+
+
+
+
+# Home Page
 
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/homepage.png' />
 
