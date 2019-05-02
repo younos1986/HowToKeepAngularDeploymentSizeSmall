@@ -11,9 +11,14 @@ Live <a target='_blank' href='https://younos1986.github.io/'> demo </a>
 
 
 
-# Home Page (page Size ~= 850KB )
+# Home Page (page Size ~= 950KB )
 
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/homepage.png' />
+
+
+## The Home page size
+
+<img src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/inspected_hompage.png'/>
 
 
 ## Development server
