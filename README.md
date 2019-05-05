@@ -3,6 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeploymentSizeSmall/#'> Home page demo </a> 
+
 Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeploymentSizeSmall/#/dashboard'> Admin panel demo </a> 
 
 # Admin Panel  (page Size ~= 950KB )
