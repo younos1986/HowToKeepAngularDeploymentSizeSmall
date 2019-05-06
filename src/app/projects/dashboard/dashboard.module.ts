@@ -13,9 +13,9 @@ import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
 
 import { AgmCoreModule } from '@agm/core';
 
-
 import { KendoFeatureModule  } from '../../modules/kendo-feature.module';
 import { AngularMaterialFeatureModule } from '../../modules/angular-material-feature.module';
+import { NotifyService } from '../../services/notify.service';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BidiModule } from '@angular/cdk/bidi';
@@ -107,7 +107,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
       useValue: DEFAULT_PERFECT_SCROLLBAR_CONFIG
-    }
+    },
+    NotifyService
   ]
 })
 export class DashboardModule { }

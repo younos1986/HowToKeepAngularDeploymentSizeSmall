@@ -46,6 +46,7 @@ import { SnotifyModule, SnotifyService, SnotifyPosition, SnotifyToastConfig, Toa
     DialogsModule,
     LayoutModule,
 
+    SnotifyModule,
   ],
   providers: [
 

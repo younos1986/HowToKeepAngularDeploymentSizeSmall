@@ -5,7 +5,7 @@ import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/filter';
 
 import { TranslateService } from '@ngx-translate/core';
-
+import { NotifyService } from '../../services/notify.service';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarDirective } from 'ngx-perfect-scrollbar';
 
 const SMALL_WIDTH_BREAKPOINT = 960;
@@ -39,12 +39,16 @@ export class DashboardComponent implements OnInit, OnDestroy {
   public config: PerfectScrollbarConfigInterface = {};
 
   constructor(
+    private _notifyService: NotifyService,
     private _element: ElementRef,
     private router: Router,
     zone: NgZone) {
     this.mediaMatcher.addListener(mql => zone.run(() => {
       this.mediaMatcher = mql;
     }));
+
+    
+
   }
 
   ngOnInit(): void {
