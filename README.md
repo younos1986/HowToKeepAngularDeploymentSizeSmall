@@ -1,5 +1,7 @@
 # HowToKeepAngularDeploymentSizeSmall
 
+A sample project to show hoe to make angular2+ deployment size small. it uses lazy loaded modules to keep the size small.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.4.
 
 Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeploymentSizeSmall/#'> Home page demo </a> 
