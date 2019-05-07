@@ -6,6 +6,20 @@ Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeplo
 
 Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeploymentSizeSmall/#/dashboard'> Admin panel demo </a> 
 
+
+
+## The routing schema 
+
+                        ------------>    Dashboard
+app.component -------->
+                        ------------>    Home     -------------> aboutus
+                                                  -------------> blog
+                                                  -------------> contact
+                                                  -------------> index
+                                                  -------------> pricing
+                                                    
+
+
 # Admin Panel  (page Size ~= 950KB )
 
 <img  src='https://raw.githubusercontent.com/younos1986/HowToKeepAngularDeploymentSizeSmall/master/doc/dashboard.png' />
