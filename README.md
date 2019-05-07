@@ -10,14 +10,17 @@ Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeplo
 
 ## The routing schema 
 
+To make any page independent and make them not affect other pages' size, every page is a Module
+
 ```
-                        ------------>    Dashboard
-app.component -------->
-                        ------------>    Home     -------------> aboutus
-                                                  -------------> blog
-                                                  -------------> contact
-                                                  -------------> index
-                                                  -------------> pricing
+                                 ------------>    Dashboard (router + template)
+app.component (router) -------->
+                                 ------------>    Home  (router + template)
+                                                                              -------------> aboutus
+                                                                              -------------> blog
+                                                                              -------------> contact
+                                                                              -------------> index
+                                                                              -------------> pricing
 ```                                                    
 
 
