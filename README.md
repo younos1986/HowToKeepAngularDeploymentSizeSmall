@@ -10,6 +10,7 @@ Live <a target='_blank' href='https://younos1986.github.io/HowToKeepAngularDeplo
 
 ## The routing schema 
 
+```
                         ------------>    Dashboard
 app.component -------->
                         ------------>    Home     -------------> aboutus
@@ -17,7 +18,7 @@ app.component -------->
                                                   -------------> contact
                                                   -------------> index
                                                   -------------> pricing
-                                                    
+```                                                    
 
 
 # Admin Panel  (page Size ~= 950KB )
